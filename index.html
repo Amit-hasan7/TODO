@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Amit's Todo Todo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div>
+<main class="app">
+  <header>
+    <div>
+      <h1>Today</h1>
+      <p class="sub" id="sub"></p>
+    </div>
+    <button class="theme" id="theme" aria-label="Toggle light or dark theme">🌓</button>
+  </header>
+
+  <div class="glass add">
+    <input id="input" type="text" placeholder="Add a task" maxlength="140" autocomplete="off" aria-label="New task">
+    <button id="addBtn">Add</button>
+  </div>
+
+  <div class="glass tabs" role="group" aria-label="Filter tasks">
+    <button data-f="all" aria-pressed="true">All</button>
+    <button data-f="active" aria-pressed="false">Active</button>
+    <button data-f="done" aria-pressed="false">Done</button>
+  </div>
+
+  <ul id="list"></ul>
+
+  <div class="foot">
+    <span id="count"></span>
+    <button id="clear">Clear done</button>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
